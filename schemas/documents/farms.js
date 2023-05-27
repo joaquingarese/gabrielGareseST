@@ -25,6 +25,12 @@ export default {
       to: [{type: 'countries'}],
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'state',
+      title: 'Departamento al cual pertece el campo',
+      description: 'Se le debe asignar el departamento al que pertenece el campo',
+      validation: (Rule) => Rule.required(),
+    },
     {name: 'description', title: 'Descripción del campo', type: 'array', of: [{type: 'block'}]},
     {
       name: 'gallery',
