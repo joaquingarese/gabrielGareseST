@@ -9,7 +9,7 @@ export default {
       title: 'Name',
     },
     {
-      name: 'salug',
+      name: 'slug',
       title: 'URL',
       description: 'URL que identifica el campo',
       type: 'slug',
