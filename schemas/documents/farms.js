@@ -27,6 +27,7 @@ export default {
     },
     {
       name: 'state',
+      type: 'string',
       title: 'Departamento al cual pertece el campo',
       description: 'Se le debe asignar el departamento al que pertenece el campo',
       validation: (Rule) => Rule.required(),
