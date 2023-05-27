@@ -30,6 +30,8 @@ export default {
       type: 'string',
       title: 'Departamento al cual pertece el campo',
       description: 'Se le debe asignar el departamento al que pertenece el campo',
+      type: 'reference',
+      to: [{type: 'states'}],
       validation: (Rule) => Rule.required(),
     },
     {name: 'description', title: 'Descripción del campo', type: 'array', of: [{type: 'block'}]},
