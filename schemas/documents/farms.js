@@ -44,7 +44,7 @@ export default {
       validation: (Rule) => Rule.required().max(2).error('Solo se pueden agregar hasta 2 fotos'),
     },
     {
-      name: 'imagen',
+      name: 'image',
       type: 'image',
       title: 'Imagen',
     },
