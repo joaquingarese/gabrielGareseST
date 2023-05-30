@@ -61,7 +61,7 @@ export default {
     {
       name: 'specialities',
       type: 'array',
-      title: 'Specialties',
+      title: 'Specialities',
       of: [
         {
           type: 'string',
