@@ -59,7 +59,7 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'specialties',
+      name: 'specialities',
       type: 'array',
       title: 'Specialties',
       of: [
