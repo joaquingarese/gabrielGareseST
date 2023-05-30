@@ -27,14 +27,63 @@ export default {
     },
     {
       name: 'state',
-      type: 'string',
       title: 'Departamento al cual pertece el campo',
       description: 'Se le debe asignar el departamento al que pertenece el campo',
       type: 'reference',
       to: [{type: 'states'}],
       validation: (Rule) => Rule.required(),
     },
-    {name: 'description', title: 'Descripción del campo', type: 'array', of: [{type: 'block'}]},
+    {
+      name: 'type',
+      type: 'string',
+      title: 'Vende o Arrienda?',
+      options: {
+        list: [
+          {title: 'Vende', value: 'sell'},
+          {title: 'Arrienda', value: 'rent'},
+        ],
+        layout: 'dropdown',
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'size',
+      type: 'number',
+      title: 'Tamaño del campo en hectáreas',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'price',
+      type: 'number',
+      title: 'Precio por hectárea (USD/ha)',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'specialties',
+      type: 'array',
+      title: 'Specialties',
+      of: [
+        {
+          type: 'string',
+          options: {
+            list: [
+              {title: 'Agricola', value: 'agriculture'},
+              {title: 'Ganadero', value: 'cattle'},
+              {title: 'Forestal', value: 'forestry'},
+              {title: 'Tambo', value: 'milking'},
+            ],
+          },
+        },
+      ],
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'description',
+      type: 'string',
+      title: 'Descripción',
+      validation: (Rule) => Rule.required(),
+    },
+    {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
     {
       name: 'gallery',
       title: 'Galeria de imagenes',
