@@ -34,7 +34,7 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'type',
+      name: 'transaction',
       type: 'string',
       title: 'Vende o Arrienda?',
       options: {
