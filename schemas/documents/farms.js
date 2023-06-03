@@ -85,17 +85,17 @@ export default {
     },
     {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
     {
-      name: 'gallery',
-      title: 'Galeria de imagenes',
-      description: 'Imagenes que va a aparecer abajo de la principal',
-      type: 'array',
-      of: [{type: 'imageWithAlt'}],
-      validation: (Rule) => Rule.required().max(2).error('Solo se pueden agregar hasta 2 fotos'),
-    },
-    {
       name: 'image',
       type: 'image',
       title: 'Imagen',
+    },
+    {
+      name: 'gallery',
+      title: 'Galeria de imagenes',
+      description: 'Imagenes que van a aparecer abajo de la principal',
+      type: 'array',
+      of: [{type: 'imageWithAlt'}],
+      validation: (Rule) => Rule.required().max(2).error('Solo se pueden agregar hasta 2 fotos'),
     },
   ],
 }
