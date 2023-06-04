@@ -6,7 +6,7 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
+      title: 'Nombre',
       validation: (Rule) => Rule.required(),
     },
     {
@@ -87,7 +87,8 @@ export default {
     {
       name: 'image',
       type: 'image',
-      title: 'Imagen',
+      title: 'Imagen principal',
+      description: 'Imagen que va a aparecer en la foto mas grande en un principio',
     },
     {
       name: 'gallery',
@@ -95,7 +96,7 @@ export default {
       description: 'Imagenes que van a aparecer abajo de la principal',
       type: 'array',
       of: [{type: 'imageWithAlt'}],
-      validation: (Rule) => Rule.required().max(2).error('Solo se pueden agregar hasta 2 fotos'),
+      validation: (Rule) => Rule.required().max(7).error('Solo se pueden agregar hasta 7 fotos'),
     },
   ],
 }
