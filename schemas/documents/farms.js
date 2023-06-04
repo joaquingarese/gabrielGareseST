@@ -96,7 +96,7 @@ export default {
       description: 'Imagenes que van a aparecer abajo de la principal',
       type: 'array',
       of: [{type: 'imageWithAlt'}],
-      validation: (Rule) => Rule.required().max(7).error('Solo se pueden agregar hasta 7 fotos'),
+      validation: (Rule) => Rule.max(7).error('Solo se pueden agregar hasta 7 fotos'),
     },
   ],
 }
