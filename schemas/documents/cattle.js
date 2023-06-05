@@ -18,6 +18,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'race',
+      type: 'string',
+      title: 'Raza',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'state',
       title: 'Departamento al cual pertece el campo',
       description: 'Se le debe asignar el departamento al que pertenece el rodeo',
