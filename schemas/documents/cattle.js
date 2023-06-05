@@ -59,7 +59,7 @@ export default {
     {
       name: 'category',
       type: 'number',
-      title: 'Categoría del Rodeo',
+      title: 'Categoría (edad) del Rodeo',
       validation: (Rule) => Rule.required(),
     },
     {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
