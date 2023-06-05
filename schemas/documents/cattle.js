@@ -66,10 +66,16 @@ export default {
       validation: (Rule) => Rule.max(7).error('Solo se pueden agregar hasta 7 fotos'),
     },
     {
-      name: 'videoFile',
-      type: 'file',
-      title: 'Video del Ganado',
-      description: 'Upload a video file',
+      name: 'video',
+      type: 'object',
+      title: 'Video de ganado',
+      fields: [
+        {
+          name: 'url',
+          type: 'url',
+          title: 'Video URL',
+        },
+      ],
     },
   ],
 }
