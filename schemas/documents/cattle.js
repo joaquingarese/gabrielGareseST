@@ -50,6 +50,18 @@ export default {
       title: 'Cantidad de cabezas de ganado',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'shortDescription',
+      type: 'string',
+      title: 'Descripción corta del Rodeo',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'category',
+      type: 'number',
+      title: 'Categoría del Rodeo',
+      validation: (Rule) => Rule.required(),
+    },
     {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
     {
       name: 'image',
