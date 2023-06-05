@@ -58,7 +58,7 @@ export default {
     },
     {
       name: 'category',
-      type: 'number',
+      type: 'string',
       title: 'Categoría (edad) del Rodeo',
       validation: (Rule) => Rule.required(),
     },
