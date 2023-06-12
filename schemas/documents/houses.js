@@ -62,12 +62,6 @@ export default {
       title: 'Precio de la casa en USD',
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'description',
-      type: 'string',
-      title: 'Descripción',
-      validation: (Rule) => Rule.required(),
-    },
     {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
     {
       name: 'image',
