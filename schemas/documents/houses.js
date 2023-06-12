@@ -1,7 +1,7 @@
 export default {
   name: 'houses',
   type: 'document',
-  title: 'Casas',
+  title: 'Propiedades',
   fields: [
     {
       name: 'name',
@@ -45,6 +45,18 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'rooms',
+      type: 'number',
+      title: 'Número de Dormitorios',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'bathrooms',
+      type: 'number',
+      title: 'Numero de Baños',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'price',
       type: 'number',
       title: 'Precio de la casa en USD',
@@ -62,6 +74,7 @@ export default {
       type: 'image',
       title: 'Imagen principal',
       description: 'Imagen que va a aparecer en la foto mas grande en un principio',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'gallery',
