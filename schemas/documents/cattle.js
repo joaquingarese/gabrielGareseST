@@ -68,6 +68,7 @@ export default {
       type: 'image',
       title: 'Imagen principal',
       description: 'Imagen que va a aparecer en la foto mas grande en un principio',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'gallery',
