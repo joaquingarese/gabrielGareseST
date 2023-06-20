@@ -4,6 +4,15 @@ export default {
   title: 'Informacion',
   fields: [
     {
+      name: 'customDate',
+      type: 'date',
+      title: 'Fecha de la informacion (solamente el último dia de la semana que marca ACG)',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'novillos',
       type: 'number',
       title: 'Precio (USD) Novillos',
@@ -46,18 +55,9 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'ovejas',
+      name: 'ovinos',
       type: 'number',
       title: 'Mercado de Faenas Ovinos',
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'customDate',
-      type: 'date',
-      title: 'Fecha informacion (solamente el último dia de la semana que marca ACG)',
-      options: {
-        dateFormat: 'YYYY-MM-DD',
-      },
       validation: (Rule) => Rule.required(),
     },
   ],
