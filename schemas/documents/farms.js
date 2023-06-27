@@ -31,7 +31,6 @@ export default {
       description: 'Se le debe asignar el departamento al que pertenece el campo',
       type: 'reference',
       to: [{type: 'states'}],
-      validation: (Rule) => Rule.required(),
     },
     {
       name: 'transaction',
