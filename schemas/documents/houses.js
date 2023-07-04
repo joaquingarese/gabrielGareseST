@@ -21,8 +21,7 @@ export default {
       name: 'state',
       title: 'Departamento al cual pertece la casa',
       description: 'Se le debe asignar el departamento al que pertenece la casa',
-      type: 'reference',
-      to: [{type: 'states'}],
+      type: 'string',
       validation: (Rule) => Rule.required(),
     },
     {
