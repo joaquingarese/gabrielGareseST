@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'state',
-      title: 'Departamento al cual pertece el campo',
+      title: 'Departamento al cual pertece el ganado',
       description: 'Se le debe asignar el departamento al que pertenece el rodeo',
       type: 'reference',
       to: [{type: 'states'}],
