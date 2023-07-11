@@ -6,12 +6,12 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Título rodeo',
+      title: 'Título rodeo **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'slug',
-      title: 'URL',
+      title: 'URL que identifica al  grupo de ganado (apretar el botón "Generate") **',
       description: 'URL que identifica al  grupo de ganado',
       type: 'slug',
       options: {source: 'name'},
@@ -20,12 +20,12 @@ export default {
     {
       name: 'race',
       type: 'string',
-      title: 'Raza',
+      title: 'Raza **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'state',
-      title: 'Departamento al cual pertece el ganado',
+      title: 'Departamento al cual pertece el ganado **',
       description: 'Se le debe asignar el departamento al que pertenece el rodeo',
       type: 'reference',
       to: [{type: 'states'}],
@@ -34,7 +34,7 @@ export default {
     {
       name: 'transaction',
       type: 'string',
-      title: 'Remate o Privada',
+      title: 'Remate o Privada **',
       options: {
         list: [
           {title: 'Remate', value: 'auction'},
@@ -47,26 +47,26 @@ export default {
     {
       name: 'size',
       type: 'number',
-      title: 'Cantidad de cabezas de ganado',
+      title: 'Cantidad de cabezas de ganado **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'shortDescription',
       type: 'string',
-      title: 'Descripción corta del Rodeo',
+      title: 'Descripción corta del Rodeo **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'category',
       type: 'string',
-      title: 'Categoría (edad) del Rodeo',
+      title: 'Categoría (edad) del Rodeo **',
       validation: (Rule) => Rule.required(),
     },
     {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
     {
       name: 'image',
       type: 'image',
-      title: 'Imagen principal',
+      title: 'Imagen principal **',
       description: 'Imagen que va a aparecer en la foto mas grande en un principio',
       validation: (Rule) => Rule.required(),
     },

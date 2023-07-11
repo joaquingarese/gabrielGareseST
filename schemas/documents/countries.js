@@ -6,12 +6,13 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
+      title: 'Nombre del pais **',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'slug',
-      title: 'URL',
-      description: 'URL que identifica el campo',
+      title: 'URL que identifica al País (apretar el botón "Generate") **',
+      description: 'URL que identifica al País',
       type: 'slug',
       options: {source: 'name'},
       validation: (Rule) => Rule.required(),
