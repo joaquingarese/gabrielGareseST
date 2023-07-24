@@ -86,6 +86,7 @@ export default {
     {
       name: 'detail',
       title: 'Detalle completo del campo **',
+      description: 'Descripción detallada del campo',
       type: 'array',
       of: [{type: 'block'}],
       validation: (Rule) => Rule.required(),

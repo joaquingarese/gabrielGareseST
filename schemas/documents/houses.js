@@ -19,9 +19,8 @@ export default {
     },
     {
       name: 'state',
-      title:
-        'Departamento al cual pertece la casa (escrito a mano acá, a diferencia de los campos) **',
-      description: 'Se le debe asignar el departamento al que pertenece la casa',
+      title: 'Barrio al cual pertece la casa (escrito a mano) **',
+      description: 'Se le debe asignar el Barrio al que pertenece la casa',
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
@@ -62,7 +61,14 @@ export default {
       title: 'Precio de la casa en USD **',
       validation: (Rule) => Rule.required(),
     },
-    {name: 'detail', title: 'Detalle', type: 'array', of: [{type: 'block'}]},
+    {
+      name: 'detail',
+      title: 'Detalle de la casa',
+      description: 'Descripción detallada de la casa',
+      type: 'array',
+      of: [{type: 'block'}],
+      validation: (Rule) => Rule.required(),
+    },
     {
       name: 'image',
       type: 'image',
