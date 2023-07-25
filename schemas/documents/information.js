@@ -15,19 +15,19 @@ export default {
     {
       name: 'novillos',
       type: 'number',
-      title: 'Precio (USD) Novillos **',
+      title: 'Precio (USD/kg en 4ta balanza) Novillos **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'cows',
       type: 'number',
-      title: 'Precio (USD) Vacas **',
+      title: 'Precio (USD/kg en 4ta balanza) Vacas **',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'vaquillonas',
       type: 'number',
-      title: 'Precio (USD) Vaquillonas **',
+      title: 'Precio (USD/kg en 4ta balanza) Vaquillonas **',
       validation: (Rule) => Rule.required(),
     },
     {
